@@ -1,4 +1,5 @@
 import { NewsSection } from "@/components/NewsSection";
+import { OpenSourceSection } from "@/components/OpenSourceSection";
 import { ProfileCard } from "@/components/ProfileCard";
 import { PublicationList } from "@/components/PublicationList";
 import siteData from "../data.json";
@@ -21,6 +22,9 @@ export default function Home() {
           {/* Right Content: News & Publications */}
           <main className="md:col-span-8 lg:col-span-9 space-y-16">
             <NewsSection news={data.news} />
+            {data.open_source && data.open_source.length > 0 && (
+              <OpenSourceSection items={data.open_source} />
+            )}
             <PublicationList papers={data.papers} />
             
             <footer className="pt-12 border-t text-sm text-muted-foreground flex justify-between items-center">

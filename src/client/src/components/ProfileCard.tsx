@@ -46,13 +46,21 @@ export function ProfileCard({ profile }: ProfileCardProps) {
           <Button variant="outline" size="sm" asChild>
             <a href={profile.github_org} target="_blank" rel="noreferrer">
               <Github className="w-4 h-4 mr-2" />
-              GitHub
+              Horizon Robotics
             </a>
           </Button>
+          {profile.github_personal && (
+            <Button variant="outline" size="sm" asChild>
+              <a href={profile.github_personal} target="_blank" rel="noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                Personal GitHub
+              </a>
+            </Button>
+          )}
           <Button variant="outline" size="sm" asChild>
             <a href={profile.lab_page} target="_blank" rel="noreferrer">
               <Globe className="w-4 h-4 mr-2" />
-              Lab Page
+              Robot Lab
             </a>
           </Button>
         </div>

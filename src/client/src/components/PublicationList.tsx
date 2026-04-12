@@ -16,8 +16,16 @@ export function PublicationList({ papers }: PublicationListProps) {
       <div className="space-y-8">
         {papers.map((paper, idx) => (
           <div key={idx} className="flex gap-6 group">
-            {/* Thumbnail Placeholder */}
-            <div className="hidden sm:block w-32 h-24 bg-muted rounded-sm flex-shrink-0" />
+            <div className="hidden sm:block w-32 h-24 bg-muted rounded-sm flex-shrink-0 overflow-hidden border">
+              {paper.thumbnail ? (
+                <img
+                  src={paper.thumbnail}
+                  alt={paper.title}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              ) : null}
+            </div>
 
             <div className="space-y-2">
               <h3 className="font-medium text-lg leading-tight group-hover:text-primary transition-colors">

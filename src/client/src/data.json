@@ -8,172 +8,223 @@
     "google_scholar": "https://scholar.google.com/citations?user=5XNNC64AAAAJ",
     "lab_page": "https://horizonrobotics.github.io/robot_lab/",
     "github_org": "https://github.com/HorizonRobotics",
+    "github_personal": "https://github.com/liuliu3dv",
     "h_index": 5,
     "i10_index": 2,
-    "bio": "I am a researcher at Horizon Robotics, focusing on 3D Vision and Embodied AI. My work aims to bridge the gap between visual perception and robotic control through foundation models and generative approaches."
+    "bio": "I am a researcher at Horizon Robotics, focusing on 3D Vision and Embodied AI. I contribute to our open-source Robot Lab ecosystem through project pages, code releases, and training stacks for embodied intelligence, with recent work spanning 3D reconstruction, generative world modeling, and robot policy transfer."
   },
+  "open_source": [
+    {
+      "title": "EmbodiedGen",
+      "url": "https://horizonrobotics.github.io/robot_lab/embodied_gen/",
+      "description": "A generative 3D world engine for embodied intelligence, with project page, paper, and open-source code.",
+      "image": "/projects/embodied_gen.gif",
+      "tags": ["Embodied AI", "World Model"],
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://horizonrobotics.github.io/robot_lab/embodied_gen/"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/HorizonRobotics/EmbodiedGen"
+        }
+      ]
+    },
+    {
+      "title": "FSR-VLN",
+      "url": "https://horizonrobotics.github.io/robot_lab/fsr-vln/",
+      "description": "Fast and slow reasoning for vision-language navigation with hierarchical multi-modal scene graphs.",
+      "image": "/projects/fsr-vln.gif",
+      "tags": ["VLN", "Reasoning"],
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://horizonrobotics.github.io/robot_lab/fsr-vln/"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/HorizonRobotics/HoBotBrain"
+        }
+      ]
+    }
+  ],
   "news": [
     {
       "date": "2026.02",
-      "content": "Three papers accepted to CVPR 2026 (Uni3R, 3D-Fixer, RoboTransfer Findings)."
+      "content": "Three papers accepted to CVPR 2026: Uni3R (highlight), 3D-Fixer, and RoboTransfer."
     },
     {
       "date": "2025.12",
-      "content": "One paper accepted to AAAI 2026 (Oral)."
+      "content": "IGFuse accepted to AAAI 2026 Oral."
     },
     {
       "date": "2025.09",
-      "content": "One paper accepted to NeurIPS 2025."
+      "content": "DIPO accepted to NeurIPS 2025."
     },
     {
       "date": "2025.06",
-      "content": "One paper accepted to IROS 2025."
+      "content": "GeoFlow-SLAM accepted to IROS 2025."
     },
     {
-      "date": "2025.02",
-      "content": "One paper accepted to CVPR 2025."
+      "date": "2025.05",
+      "content": "EmbodiedGen and RoboTransfer project pages and repositories went live in the Robot Lab ecosystem."
     }
   ],
   "papers": [
     {
       "title": "3D-Fixer: Coarse-to-Fine In-place Completion for 3D Scenes from a Single Image",
       "authors": "Zexin Yin, Liu Liu, Xinjie Wang, Wei Sui, Zhizhong Su, Jian Yang, Jin Xie",
-      "venue": "CVPR 2026",
+      "venue": "CVPR",
       "year": 2026,
-      "paper_link": "",
-      "code_link": "",
-      "project_page": "",
-      "tags": ["3D Scene Completion", "Single Image"]
+      "paper_link": "https://arxiv.org/abs/2503.16288",
+      "code_link": "https://github.com/HorizonRobotics/3D-Fixer",
+      "project_page": "https://zx-yin.github.io/3dfixer/",
+      "tags": ["3D Scene Completion", "Single Image"],
+      "thumbnail": "/projects/3dfixer-teaser.png"
     },
     {
       "title": "IGFuse: Interactive 3D Gaussian Scene Reconstruction via Multi-Scans Fusion",
       "authors": "Wenhao Hu, Zesheng Li, Haonan Zhou, Liu Liu, Xuexiang Wen, Zhizhong Su, Xi Li, Gaoang Wang",
-      "venue": "AAAI 2026 Oral",
+      "venue": "AAAI Oral",
       "year": 2026,
-      "paper_link": "",
-      "code_link": "",
-      "project_page": "",
-      "tags": ["3D Reconstruction", "Gaussian Splatting"]
-    },
-    {
-      "title": "DIPO: Dual-State Images Controlled Articulated Object Generation Powered by Diverse Data",
-      "authors": "Ruqi Wu, Xinjie Wang, Liu Liu, Chunle Guo, Jiaxiong Qiu, Chongyi Li, Lichao Huang, Zhizhong Su, Ming-Ming Cheng",
-      "venue": "NeurIPS 2025",
-      "year": 2025,
-      "paper_link": "https://arxiv.org/abs/2505.20460",
-      "code_link": "https://github.com/HorizonRobotics/DIPO",
-      "project_page": "",
-      "tags": ["Generative AI", "3D Objects", "Articulated Objects"]
-    },
-    {
-      "title": "GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial Fusion SLAM for Dynamic Legged Robotics",
-      "authors": "Tingyang Xiao, Xiaolin Zhou, Liu Liu, Wei Sui, Wei Feng, Jiaxiong Qiu, Xinjie Wang, Zhizhong Su",
-      "venue": "IROS 2025",
-      "year": 2025,
-      "paper_link": "https://arxiv.org/abs/2503.14247",
-      "code_link": "",
-      "project_page": "",
-      "tags": ["SLAM", "Robotics"]
-    },
-    {
-      "title": "GaussTR: Foundation Model-Aligned Gaussian Transformer for Self-Supervised 3D Spatial Understanding",
-      "authors": "Haoyi Jiang, Liu Liu, Tianheng Cheng, Xinjie Wang, Tianwei Lin, Zhizhong Su, Wenyu Liu, Xinggang Wang",
-      "venue": "CVPR 2025",
-      "year": 2025,
-      "paper_link": "https://arxiv.org/abs/2412.13193",
-      "code_link": "https://github.com/hustvl/GaussTR",
-      "project_page": "https://hustvl.github.io/GaussTR/",
-      "tags": ["3D Vision", "Transformer", "Gaussian Splatting"]
+      "paper_link": "https://arxiv.org/pdf/2508.13153",
+      "code_link": "https://github.com/whhu7/IGFuse-code",
+      "project_page": "https://whhu7.github.io/IGFuse/",
+      "tags": ["3D Reconstruction", "Gaussian Splatting"],
+      "thumbnail": "/projects/IGFuse.gif"
     },
     {
       "title": "RoboTransfer: Geometry-Consistent Video Diffusion for Robotic Visual Policy Transfer",
       "authors": "Liu Liu, Xiaofeng Wang, Guosheng Zhao, Keyu Li, Wenkang Qin, Jiaxiong Qiu, Zheng Zhu, Guan Huang, Zhizhong Su",
-      "venue": "CVPR 2026 Findings",
+      "venue": "CVPR Findings",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2505.23171",
       "code_link": "https://github.com/HorizonRobotics/RoboTransfer",
       "project_page": "https://horizonrobotics.github.io/robot_lab/robotransfer/",
-      "tags": ["Robotics", "Video Diffusion", "Sim-to-Real"]
+      "tags": ["Robotics", "Video Diffusion", "Sim-to-Real"],
+      "thumbnail": "/projects/robotransfer.gif"
     },
     {
       "title": "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-view Images",
       "authors": "Xiangyu Sun, Haoyi Jiang, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie Wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
-      "venue": "CVPR 2026",
+      "venue": "CVPR",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2508.03643",
-      "code_link": "",
+      "code_link": "https://github.com/HorizonRobotics/Uni3R",
+      "project_page": "https://horizonrobotics.github.io/robot_lab/uni3R/",
+      "tags": ["Highlight", "3D Reconstruction", "Semantic Understanding"],
+      "thumbnail": "/projects/Uni3R.gif"
+    },
+    {
+      "title": "DIPO: Dual-State Images Controlled Articulated Object Generation Powered by Diverse Data",
+      "authors": "Ruqi Wu, Xinjie Wang, Liu Liu, Chunle Guo, Jiaxiong Qiu, Chongyi Li, Lichao Huang, Zhizhong Su, Ming-Ming Cheng",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "paper_link": "https://arxiv.org/abs/2505.20460",
+      "code_link": "https://github.com/RQ-Wu/DIPO",
+      "project_page": "https://rq-wu.github.io/projects/DIPO",
+      "tags": ["Generative AI", "3D Objects", "Articulated Objects"],
+      "thumbnail": "/projects/dipo.gif"
+    },
+    {
+      "title": "GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial Fusion SLAM for Dynamic Legged Robotics",
+      "authors": "Tingyang Xiao, Xiaolin Zhou, Liu Liu, Wei Sui, Wei Feng, Jiaxiong Qiu, Xinjie Wang, Zhizhong Su",
+      "venue": "IROS",
+      "year": 2025,
+      "paper_link": "https://arxiv.org/abs/2503.14247",
+      "code_link": "https://github.com/HorizonRobotics/GeoFlowSlam",
       "project_page": "",
-      "tags": ["3D Reconstruction", "Semantic Understanding"]
+      "tags": ["SLAM", "Robotics"],
+      "thumbnail": "/projects/GeomFlow.gif"
+    },
+    {
+      "title": "GaussTR: Foundation Model-Aligned Gaussian Transformer for Self-Supervised 3D Spatial Understanding",
+      "authors": "Haoyi Jiang, Liu Liu, Tianheng Cheng, Xinjie Wang, Tianwei Lin, Zhizhong Su, Wenyu Liu, Xinggang Wang",
+      "venue": "CVPR",
+      "year": 2025,
+      "paper_link": "https://arxiv.org/abs/2412.13193",
+      "code_link": "https://github.com/hustvl/GaussTR",
+      "project_page": "https://hustvl.github.io/GaussTR/",
+      "tags": ["3D Vision", "Transformer", "Gaussian Splatting"],
+      "thumbnail": "/projects/gstr.gif"
     },
     {
       "title": "EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence",
       "authors": "Xinjie Wang, Liu Liu, Yu Cao, Ruiqi Wu, Wenkang Qin, Dehui Wang, Wei Sui, Zhizhong Su",
-      "venue": "arXiv 2025",
+      "venue": "arXiv",
       "year": 2025,
       "paper_link": "https://arxiv.org/abs/2506.10600",
       "code_link": "https://github.com/HorizonRobotics/EmbodiedGen",
-      "project_page": "",
-      "tags": ["Embodied AI", "Generative World Model"]
-    },
-    {
-      "title": "RecurGS: Interactive Scene Modeling via Discrete-State Recurrent Gaussian Fusion",
-      "authors": "Wenhao Hu, Haonan Zhou, Zesheng Li, Liu Liu, Jianfei Dong, Zhizhong Su, Gaoang Wang",
-      "venue": "arXiv 2025",
-      "year": 2025,
-      "paper_link": "https://arxiv.org/abs/2512.18386",
-      "code_link": "",
-      "project_page": "",
-      "tags": ["3D Vision", "Interactive Modeling"]
-    },
-    {
-      "title": "TabletopGen: Instance-Level Interactive 3D Tabletop Scene Generation from Text or Single Image",
-      "authors": "Zhihao Wang, Yingfei He, Liang Yang, Wenjie Zou, Hongmin Ma, Liu Liu, Wei Sui, Yujun Guo, Hang Su",
-      "venue": "arXiv 2025",
-      "year": 2025,
-      "paper_link": "https://arxiv.org/abs/2512.01204",
-      "code_link": "",
-      "project_page": "",
-      "tags": ["Generative AI", "Scene Generation"]
+      "project_page": "https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html",
+      "tags": ["Embodied AI", "Generative World Model"],
+      "thumbnail": "/projects/embodied_gen.gif"
     },
     {
       "title": "FSR-VLN: Fast and Slow Reasoning for Vision-Language Navigation with Hierarchical Multi-modal Scene Graph",
       "authors": "Xiaolin Zhou, Tingyang Xiao, Liu Liu, Yucheng Wang, Maiyue Chen, Xinrui Meng, Xinjie Wang, Wei Sui, Zhizhong Su",
-      "venue": "arXiv 2025",
+      "venue": "arXiv",
       "year": 2025,
-      "paper_link": "",
-      "code_link": "",
-      "project_page": "",
-      "tags": ["Vision-Language Navigation", "Reasoning"]
+      "paper_link": "https://arxiv.org/pdf/2509.13733",
+      "code_link": "https://github.com/HorizonRobotics/HoBotBrain",
+      "project_page": "https://horizonrobotics.github.io/robot_lab/fsr-vln/",
+      "tags": ["Vision-Language Navigation", "Reasoning"],
+      "thumbnail": "/projects/fsr-vln.gif"
     },
     {
       "title": "DreamLifting: A Plug-in Module Lifting MV Diffusion Models for 3D Asset Generation",
       "authors": "Ze-Xin Yin, Jiaxiong Qiu, Liu Liu, Xinjie Wang, Wei Sui, Zhizhong Su, Jian Yang, Jin Xie",
-      "venue": "arXiv 2025",
+      "venue": "arXiv",
       "year": 2025,
       "paper_link": "",
       "code_link": "",
+      "project_page": "https://zx-yin.github.io/dreamlifting",
+      "tags": ["Generative AI", "3D Assets"],
+      "thumbnail": "/projects/DreamLifting.gif"
+    },
+    {
+      "title": "RecurGS: Interactive Scene Modeling via Discrete-State Recurrent Gaussian Fusion",
+      "authors": "Wenhao Hu, Haonan Zhou, Zesheng Li, Liu Liu, Jianfei Dong, Zhizhong Su, Gaoang Wang",
+      "venue": "arXiv",
+      "year": 2025,
+      "paper_link": "https://arxiv.org/abs/2512.18386",
+      "code_link": "",
       "project_page": "",
-      "tags": ["Generative AI", "3D Assets"]
+      "tags": ["3D Vision", "Interactive Modeling"],
+      "thumbnail": "/projects/recurgs-thumb.png"
+    },
+    {
+      "title": "TabletopGen: Instance-Level Interactive 3D Tabletop Scene Generation from Text or Single Image",
+      "authors": "Zhihao Wang, Yingfei He, Liang Yang, Wenjie Zou, Hongmin Ma, Liu Liu, Wei Sui, Yujun Guo, Hang Su",
+      "venue": "arXiv",
+      "year": 2025,
+      "paper_link": "https://arxiv.org/abs/2512.01204",
+      "code_link": "",
+      "project_page": "",
+      "tags": ["Generative AI", "Scene Generation"],
+      "thumbnail": "/projects/tabletopgen-teaser.png"
     },
     {
       "title": "GLS: Geometry-aware 3D Language Gaussian Splatting",
       "authors": "Jiaxiong Qiu, Liu Liu, Xinjie Wang, Tianwei Lin, Wei Sui, Zhizhong Su",
-      "venue": "arXiv 2024",
+      "venue": "arXiv",
       "year": 2024,
       "paper_link": "https://arxiv.org/abs/2411.18066",
       "code_link": "https://github.com/HorizonRobotics/GLS",
       "project_page": "",
-      "tags": ["3D Vision", "Language", "Gaussian Splatting"]
+      "tags": ["3D Vision", "Language", "Gaussian Splatting"],
+      "thumbnail": "/projects/gls.gif"
     },
     {
       "title": "Gaussian Object Carver: Object-Compositional Gaussian Splatting with surfaces completion",
       "authors": "Liu Liu, Xinjie Wang, Jiaxiong Qiu, Tianwei Lin, Xiaolin Zhou, Zhizhong Su",
-      "venue": "arXiv 2024",
+      "venue": "arXiv",
       "year": 2024,
       "paper_link": "https://arxiv.org/abs/2412.02075",
       "code_link": "",
       "project_page": "",
-      "tags": ["3D Vision", "Gaussian Splatting"]
+      "tags": ["3D Vision", "Gaussian Splatting"],
+      "thumbnail": "/projects/goc.gif"
     }
   ]
 }

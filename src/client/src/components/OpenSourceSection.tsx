@@ -89,18 +89,6 @@ export function OpenSourceSection({ items }: OpenSourceSectionProps) {
           </article>
         ))}
       </div>
-      <p className="text-xs text-muted-foreground pt-1">
-        Full organization list:{" "}
-        <a
-          href="https://github.com/HorizonRobotics"
-          target="_blank"
-          rel="noreferrer"
-          className="underline-offset-2 hover:text-primary hover:underline"
-        >
-          github.com/HorizonRobotics
-        </a>
-        .
-      </p>
     </section>
   );
 }

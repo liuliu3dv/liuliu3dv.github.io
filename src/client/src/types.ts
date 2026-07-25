@@ -3,10 +3,7 @@ export interface Profile {
   title: string;
   affiliation: string;
   research_areas: string[];
-  email_domain: string;
   google_scholar: string;
-  lab_page: string;
-  github_org: string;
   /** Personal GitHub profile (e.g. liuliu3dv). */
   github_personal?: string;
   h_index: number;

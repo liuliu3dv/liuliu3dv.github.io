@@ -1,4 +1,4 @@
-import { Github, Globe, GraduationCap, Mail, MapPin } from "lucide-react";
+import { Github, GraduationCap, Mail, MapPin } from "lucide-react";
 import { Profile } from "../types";
 import { Button } from "./ui/button";
 
@@ -28,11 +28,11 @@ export function ProfileCard({ profile }: ProfileCardProps) {
         <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-1.5">
             <Mail className="w-4 h-4" />
-            <span>{profile.email_domain}</span>
+            <span>nemo.liu@horizon.auto</span>
           </div>
           <div className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
-            <span>Beijing, China</span>
+            <span>Shanghai, China</span>
           </div>
         </div>
 
@@ -43,12 +43,6 @@ export function ProfileCard({ profile }: ProfileCardProps) {
               Google Scholar
             </a>
           </Button>
-          <Button variant="outline" size="sm" asChild>
-            <a href={profile.github_org} target="_blank" rel="noreferrer">
-              <Github className="w-4 h-4 mr-2" />
-              Horizon Robotics
-            </a>
-          </Button>
           {profile.github_personal && (
             <Button variant="outline" size="sm" asChild>
               <a href={profile.github_personal} target="_blank" rel="noreferrer">
@@ -57,13 +51,7 @@ export function ProfileCard({ profile }: ProfileCardProps) {
               </a>
             </Button>
           )}
-          <Button variant="outline" size="sm" asChild>
-            <a href={profile.lab_page} target="_blank" rel="noreferrer">
-              <Globe className="w-4 h-4 mr-2" />
-              Robot Lab
-            </a>
-          </Button>
-        </div>
+          </div>
       </div>
     </div>
   );

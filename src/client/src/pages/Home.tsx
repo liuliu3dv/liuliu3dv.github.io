@@ -27,7 +27,7 @@ export default function Home() {
   const [language, setLanguage] = useState<Language>(() => {
     const saved = window.localStorage.getItem("site-language");
     if (saved === "en" || saved === "zh") return saved;
-    return window.navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
+    return "en";
   });
   const zh = language === "zh";
 

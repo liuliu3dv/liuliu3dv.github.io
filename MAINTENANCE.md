@@ -1,6 +1,6 @@
 # 个人主页维护指南
 
-本主页采用 **React + Tailwind CSS** 构建，数据与代码分离。所有内容数据存储在 `src/client/src/data.json` 中，并支持中文 / English 双语切换。用户选择的语言会保存在浏览器中。
+本主页采用 **React + Tailwind CSS** 构建，数据与代码分离。所有内容数据存储在 `src/client/src/data.json` 中，首次访问默认英文，并支持中文 / English 双语切换。用户选择的语言会保存在浏览器中，后续访问优先使用已保存的选择。
 
 ## 页面结构
 

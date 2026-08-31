@@ -12,7 +12,7 @@
 
 ## 头像与访问统计
 
-头像保存在 `src/client/public/profile-dscf1311.jpg`，使用本人提供的 `DSCF1311.JPG` 原图；首页保留完整 3:2 构图，个人介绍页通过 CSS 居中显示为方形头像，不修改原始照片。
+头像保存在 `src/client/public/profile-dscf1311.jpg`，使用本人提供的 `DSCF1311.JPG` 原图；首页与个人介绍页均在名字左侧通过 CSS 居中显示为方形头像，不修改原始照片。
 
 访问统计由 `VisitorCounter.tsx` 中的 [Hits](https://hits.sh/docs/) 图片计数器提供，无需注册或后端。统计的是页面加载次数，不是去重人数；本地预览不计数，部署到网站域名后自动启用。统计面板为 `https://hits.sh/liuliu3dv.github.io/`。该第三方服务的可用性不由本仓库保证。
 

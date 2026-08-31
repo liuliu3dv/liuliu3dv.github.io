@@ -10,8 +10,6 @@ interface ProfileCardProps {
 export function ProfileCard({ profile, language }: ProfileCardProps) {
   const isZh = language === "zh";
   const name = isZh ? profile.name_zh || profile.name : profile.name;
-  const title = isZh ? profile.title_zh || profile.title : profile.title;
-  const affiliation = isZh ? profile.affiliation_zh || profile.affiliation : profile.affiliation;
   const bio = isZh ? profile.bio_zh || profile.bio : profile.bio;
   const location = isZh ? profile.location_zh || profile.location : profile.location;
   const initials = isZh && profile.name_zh
@@ -20,16 +18,14 @@ export function ProfileCard({ profile, language }: ProfileCardProps) {
 
   return (
     <div className="space-y-6">
-      <div className="flex h-28 w-28 select-none items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-4xl font-light text-primary ring-1 ring-primary/15">
-        {profile.avatar ? <img src={profile.avatar} alt={name} className="h-full w-full object-cover" /> : initials}
-      </div>
-
       <div className="space-y-4">
         <div>
-          <h1 className="font-serif text-4xl font-semibold tracking-tight">{name}</h1>
-          <p className="text-lg text-muted-foreground mt-1">
-            {title} @ <span className="text-primary">{affiliation}</span>
-          </p>
+          <div className="flex items-center gap-4">
+            <div className="flex h-20 w-20 shrink-0 select-none items-center justify-center overflow-hidden rounded-2xl bg-primary/5 text-3xl font-light text-primary ring-1 ring-primary/15 md:h-16 md:w-16 lg:h-20 lg:w-20">
+              {profile.avatar ? <img src={profile.avatar} alt={name} className="h-full w-full object-cover" /> : initials}
+            </div>
+            <h1 className="min-w-0 font-serif text-3xl font-semibold tracking-tight lg:text-4xl">{name}</h1>
+          </div>
         </div>
 
         <p className="text-muted-foreground leading-relaxed max-w-2xl">

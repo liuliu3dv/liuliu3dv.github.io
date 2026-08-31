@@ -1,23 +1,142 @@
 {
   "profile": {
     "name": "Liu Liu",
-    "title": "Researcher",
+    "name_zh": "刘浏",
+    "avatar": "/profile-dscf1311.jpg",
+    "title": "Embodied AI & World Models Lead",
+    "title_zh": "具身智能・世界模型方向负责人",
     "affiliation": "Horizon Robotics",
+    "affiliation_zh": "地平线机器人",
     "research_areas": [
-      "3D Vision",
-      "Embodied AI"
+      "World Action Models",
+      "3D Generation",
+      "3D Reconstruction & Understanding"
     ],
     "google_scholar": "https://scholar.google.com/citations?user=5XNNC64AAAAJ",
     "github_personal": "https://github.com/liuliu3dv",
-    "h_index": 5,
-    "i10_index": 2,
-    "bio": "I am a researcher at Horizon Robotics, focusing on 3D Vision and Embodied AI. I contribute to our open-source Robot Lab ecosystem through project pages, code releases, and training stacks for embodied intelligence, with recent work spanning 3D reconstruction, generative world modeling, and robot policy transfer."
+    "email": "nemo.liu@horizon.auto",
+    "location": "Shanghai, China",
+    "location_zh": "中国・上海",
+    "citations": 224,
+    "h_index": 8,
+    "i10_index": 8,
+    "bio": "Research and technical lead with end-to-end experience spanning foundational 3D perception, scalable data systems, and embodied AI. I focus on world action models, interactive 3D world generation, and 3D reconstruction and understanding, with an emphasis on turning research into deployed systems and open-source ecosystems.",
+    "bio_zh": "具备从底层3D感知、规模化数据系统到具身智能算法的完整研发经历，长期聚焦世界动作模型、可交互3D世界生成、3D重建及理解，并推动研究成果走向系统落地与开放生态。关注具身智能方向的技术和合作交流。"
   },
+  "research_focus": [
+    {
+      "title": "Unified World Action Models",
+      "title_zh": "统一世界动作模型",
+      "description": "Building a scalable multimodal data pyramid and automated annotation across internet, ego, and robot data, while advancing multiple technical tracks in parallel.",
+      "description_zh": "打通多模态数据金字塔的规模化拓展与自动化标注，覆盖互联网数据、Ego数据与Robot数据，推动多条技术方案主线并行推进。",
+      "projects": ["DreamWAM", "Faster-WAM", "RoboTransfer"]
+    },
+    {
+      "title": "3D Generation & Interactive Environments",
+      "title_zh": "3D生成及可交互环境",
+      "description": "Leading simulation-ready 3D world generation, in-place scene completion, and controllable digital twins for embodied training and evaluation.",
+      "description_zh": "主导可交互3D世界生成、原位场景补全与可控数字孪生，为具身策略训练、评测和轨迹合成提供仿真就绪环境。",
+      "projects": ["EmbodiedGen / V2", "3D-Fixer", "ManiSplat"]
+    },
+    {
+      "title": "3D Reconstruction & Understanding",
+      "title_zh": "3D重建及理解",
+      "description": "Developing feed-forward 3D foundation models, streaming geometry-instance understanding, and persistent 3D spatial memory for embodied agents.",
+      "description_zh": "推进Feed-Forward 3D基础模型、流式几何-实例理解与持久化3D空间记忆，服务具身Agent的感知与执行闭环。",
+      "projects": ["HoloAgent-0", "IGGT4D", "Uni3R"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Horizon Robotics",
+      "company_zh": "地平线机器人",
+      "role": "Embodied AI & World Models Lead",
+      "role_zh": "具身智能・世界模型方向负责人",
+      "location": "Shanghai / Beijing",
+      "location_zh": "上海 / 北京",
+      "period": "2024–Present",
+      "summary": "Responsible for technical roadmaps and system delivery across unified world action models, 3D generation and interactive environments, and 3D reconstruction and understanding.",
+      "summary_zh": "负责统一世界动作模型、3D生成及可交互环境、3D重建及理解三条方向的技术路线与系统落地。",
+      "highlights": [
+        "Unified World Action Models: scale the multimodal data pyramid and automate annotation across internet, ego, and robot data, advancing multiple technical approaches in parallel.",
+        "3D Generation & Interactive Environments: lead EmbodiedGen / V2 and serve as Project Lead for 3D-Fixer and ManiSplat, connecting simulation-ready scene generation with completion, digital twins, and manipulation trajectories.",
+        "3D Reconstruction & Understanding: drive HoloAgent-0 and its persistent 3D spatial memory as a corresponding author; lead IGGT4D's streaming 4D understanding and 147K-sequence data system, and Uni3R's unified reconstruction and semantic understanding."
+      ],
+      "highlights_zh": [
+        "Unified World Action Model：打通多模态数据金字塔的规模化拓展与自动化标注（互联网数据、Ego数据、Robot数据），推动多条技术方案主线并行推进。",
+        "3D生成及可交互环境：主导 EmbodiedGen / V2；作为 Project Lead 推动 3D-Fixer 原位场景补全与 ManiSplat 可控数字孪生及操作轨迹合成。",
+        "3D重建及理解：推动 HoloAgent-0 统一Agent框架与持久化3D空间记忆落地并担任通讯作者；作为 Project Lead 负责 IGGT4D 的流式4D理解与14.7万序列数据体系，以及 Uni3R 的统一3D重建与语义理解。"
+      ]
+    },
+    {
+      "company": "Horizon Robotics",
+      "company_zh": "地平线机器人",
+      "role": "Autonomous Driving 4D Label & Closed-loop Simulation Technical Lead",
+      "role_zh": "自动驾驶 4D Label&闭环仿真技术负责人",
+      "location": "Shanghai / Beijing",
+      "location_zh": "上海 / 北京",
+      "period": "2022–2024",
+      "summary": "Led a production-grade vision-only 4D labeling system and Horizon's first 3D Gaussian Splatting closed-loop simulation and data synthesis pipeline.",
+      "summary_zh": "带队交付国内首套纯视觉4D Label标注系统，并主导地平线首个基于3D Gaussian Splatting的闭环仿真与数据合成系统。"
+    },
+    {
+      "company": "Orbbec",
+      "company_zh": "深圳奥比中光科技有限公司",
+      "role": "3D Perception Algorithm Lead / Algorithm Engineer",
+      "role_zh": "3D感知算法负责人 / 算法工程师",
+      "location": "Shenzhen",
+      "location_zh": "深圳",
+      "period": "2019–2022",
+      "summary": "Led product development across monocular and stereo depth, LiDAR-camera fusion and calibration, ToF, and single-photon LiDAR systems.",
+      "summary_zh": "负责单目/双目深度、LiDAR-Camera融合与标定、ToF及单光子LiDAR等产品的算法研发与工程落地。"
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Eng. in Solid Mechanics",
+      "degree_zh": "固体力学・工学硕士",
+      "institution": "Southeast University",
+      "institution_zh": "东南大学"
+    },
+    {
+      "degree": "B.Eng. in Mechanics",
+      "degree_zh": "力学・工学学士",
+      "institution": "Southeast University",
+      "institution_zh": "东南大学"
+    }
+  ],
+  "service": [
+    {
+      "label": "Professional appointment",
+      "label_zh": "专业任职",
+      "content": "Committee Member, Technical Committee on 3D Vision, China Society of Image and Graphics (CSIG).",
+      "content_zh": "中国图象图形学学会（CSIG）三维视觉专业委员会委员。"
+    },
+    {
+      "label": "Patents",
+      "label_zh": "专利",
+      "content": "More than 10 domestic and international 3D vision patents, covering depth estimation, stereo matching, LiDAR-camera calibration, sensor synchronization, single-photon LiDAR ranging, and point cloud processing.",
+      "content_zh": "国内外3D视觉相关专利10余项，覆盖深度估计、立体匹配、LiDAR-Camera标定、传感器同步、单光子LiDAR测距与点云处理等。"
+    },
+    {
+      "label": "Book contribution",
+      "label_zh": "专著",
+      "content": "Contributed to 《智能驾驶与多维重建》 (China Machine Press, 2025), covering 3D reconstruction, 4D labeling, mapping and localization, simulation, and visualization through industry practice.",
+      "content_zh": "参与编撰《智能驾驶与多维重建》（机械工业出版社，2025），结合产业实践介绍三维重建、4D标注、建图定位、仿真与可视化。"
+    },
+    {
+      "label": "Peer review",
+      "label_zh": "学术审稿",
+      "content": "Reviewer for conferences including CVPR, NeurIPS, AAAI, and IROS, as well as journals.",
+      "content_zh": "担任 CVPR、NeurIPS、AAAI、IROS 等会议及期刊审稿人。"
+    }
+  ],
   "open_source": [
     {
       "title": "HoloAgent-0",
       "url": "https://horizonrobotics.github.io/robot_lab/holoagent/",
       "description": "A unified, agentic system for general-purpose robots, enabling multi-modal perception, mapping and localization, and autonomous mobility and manipulation. v0 release.",
+      "description_zh": "面向通用机器人的统一Agent系统，融合多模态感知、建图定位、自主移动与操作，并通过持久化3D空间记忆构建可反馈的执行闭环。",
       "tags": [
         "Embodied AI",
         "Agent",
@@ -44,6 +163,7 @@
       "title": "EmbodiedGen V2",
       "url": "https://horizonrobotics.github.io/EmbodiedGen/",
       "description": "A generative 3D world engine for embodied intelligence — V2 upgrade with enhanced generation quality and expanded capabilities. Project page, paper, and open-source code available.",
+      "description_zh": "面向具身智能的生成式3D世界引擎；V2进一步提升生成质量、物理与尺度一致性，并扩展仿真就绪能力。",
       "image": "/projects/embodied_gen_v2_overview.jpg",
       "tags": [
         "Embodied AI",
@@ -68,43 +188,93 @@
   ],
   "news": [
     {
-      "date": "2026.07",
-      "content": "HoloAgent-0 and EmbodiedGen V2 released."
+      "date": "2026.08",
+      "content": "DreamWAM and Faster-WAM released, advancing robust and efficient world action models.",
+      "content_zh": "DreamWAM 与 Faster-WAM 发布，推进更鲁棒、更高效的世界动作模型。"
     },
     {
       "date": "2026.07",
-      "content": "SimWeaver and IGGT4D project pages and paper released."
+      "content": "HoloAgent-0 and EmbodiedGen V2 released.",
+      "content_zh": "HoloAgent-0 与 EmbodiedGen V2 发布。"
+    },
+    {
+      "date": "2026.07",
+      "content": "SimWeaver and IGGT4D project pages and paper released.",
+      "content_zh": "SimWeaver 与 IGGT4D 项目主页及论文发布。"
     },
     {
       "date": "2026.06",
-      "content": "NoDrift3R and TabletopGen accepted to ECCV 2026."
+      "content": "NoDrift3R and TabletopGen accepted to ECCV 2026.",
+      "content_zh": "NoDrift3R 与 TabletopGen 被 ECCV 2026 接收。"
     },
     {
       "date": "2026.02",
-      "content": "Three papers accepted to CVPR 2026: Uni3R (highlight), 3D-Fixer, and RoboTransfer."
+      "content": "Three papers accepted to CVPR 2026: Uni3R (highlight), 3D-Fixer, and RoboTransfer.",
+      "content_zh": "三篇论文被 CVPR 2026 接收：Uni3R（Highlight）、3D-Fixer 与 RoboTransfer。"
     },
     {
       "date": "2025.12",
-      "content": "IGFuse accepted to AAAI 2026 Oral."
+      "content": "IGFuse accepted to AAAI 2026 Oral.",
+      "content_zh": "IGFuse 被 AAAI 2026 Oral 接收。"
     },
     {
       "date": "2025.09",
-      "content": "DIPO accepted to NeurIPS 2025."
+      "content": "DIPO accepted to NeurIPS 2025.",
+      "content_zh": "DIPO 被 NeurIPS 2025 接收。"
     },
     {
       "date": "2025.06",
-      "content": "GeoFlow-SLAM accepted to IROS 2025."
+      "content": "GeoFlow-SLAM accepted to IROS 2025.",
+      "content_zh": "GeoFlow-SLAM 被 IROS 2025 接收。"
     },
     {
       "date": "2025.05",
-      "content": "EmbodiedGen and RoboTransfer project pages and repositories went live in the Robot Lab ecosystem."
+      "content": "EmbodiedGen and RoboTransfer project pages and repositories went live in the Robot Lab ecosystem.",
+      "content_zh": "EmbodiedGen 与 RoboTransfer 项目主页和代码仓库在 Robot Lab 生态中上线。"
     }
   ],
   "papers": [
     {
-      "title": "IGGT4D: Streaming 4D Instance-Grounded Geometry Transformer",
-      "authors": "Zhengyu Zou, Hao Li, Kuixuan Jiao, Liu Liu, Tingyang Xiao, Xiaolin Zhou, Fangzhou Hong, Zhizhong Su, Dingwen Zhang, Ziwei Liu",
+      "title": "InstructMove: A Text-Indispensable Benchmark for Instruction-Following Manipulation",
+      "authors": "Mengao Zhao, Ziang Li, Chaodong Huang, Mengchen Ma, Haoyi Jiang, Yiwei Jin, Xinjie Wang, Yun Du, Xuewu Lin, Taojun Ding, Hongyu Xie, Jackson Jiang, Chunlei Yu, Kaihua Zhang, Lichao Huang, Liu Liu, Tianwei Lin, Zhizhong Su",
       "venue": "arXiv",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2608.22990",
+      "code_link": "https://github.com/HorizonRobotics/RoboOrchardSim",
+      "project_page": "",
+      "tags": ["Robotics", "Instruction Following", "Benchmark"]
+    },
+    {
+      "title": "DreamWAM: Beyond RGB Future Prediction for World Action Models",
+      "authors": "Shanglin Yuan, Weiheng Zhao, Xin Shi, Haoyi Jiang, Xianda Guo, Liu Liu, Wenyu Liu, Wei Sui, Xinggang Wang",
+      "venue": "arXiv",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2608.04996",
+      "code_link": "https://github.com/hustvl/DreamWAM",
+      "project_page": "",
+      "tags": [
+        "World Action Model",
+        "Robot Manipulation"
+      ]
+    },
+    {
+      "title": "Faster-WAM: Efficient Inference-Time Future Conditioning for Robust World Action Models",
+      "authors": "Weiheng Zhao, Haoyi Jiang, Xin Shi, Liu Liu, Fan Huang, Zhizhong Su, Wei Sui, Xinggang Wang",
+      "venue": "arXiv",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2608.04404",
+      "code_link": "",
+      "project_page": "",
+      "tags": [
+        "World Action Model",
+        "Efficient Inference"
+      ]
+    },
+    {
+      "title": "IGGT4D: Streaming 4D Instance-Grounded Geometry Transformer",
+      "roles": ["project_lead"],
+      "authors": "Zhengyu Zou, Hao Li, Kuixuan Jiao, Liu Liu, Tingyang Xiao, Xiaolin Zhou, Fangzhou Hong, Zhizhong Su, Dingwen Zhang, Ziwei Liu",
+      "venue": "NeurIPS (under review)",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2607.19228",
       "code_link": "https://github.com/HorizonRobotics/IGGT4D",
@@ -118,6 +288,7 @@
     },
     {
       "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+      "roles": ["project_lead"],
       "authors": "Xinjie Wang, Liu Liu, Taojun Ding, Andrew Choi, Chaodong Huang, Mengao Zhao, Ziang Li, Jackson Jiang, Chunlei Yu, Shengxiang Liu, Wei Xu, Zhizhong Su",
       "venue": "Technical Report",
       "year": 2026,
@@ -132,7 +303,23 @@
       "thumbnail": "/projects/embodied_gen_v2_overview.jpg"
     },
     {
+      "title": "GeoFlow-SLAM++: A Robust Multi-Camera Visual-Inertial SLAM System with Relocalization",
+      "roles": ["project_lead"],
+      "authors": "Wei Feng, Tingyang Xiao, Liu Liu, Xiaolin Zhou, Zhizhong Su",
+      "venue": "arXiv",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2606.22051",
+      "code_link": "",
+      "project_page": "",
+      "tags": [
+        "Multi-Camera",
+        "Visual-Inertial SLAM",
+        "Relocalization"
+      ]
+    },
+    {
       "title": "NoDrift3R: Raymap-Guided Coupling for Drift-Robust Unposed Feed-Forward 3D Reconstruction",
+      "roles": ["corresponding_author"],
       "authors": "Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam, Zhizhong Su, Eunbyung Park",
       "venue": "ECCV",
       "year": 2026,
@@ -148,6 +335,7 @@
     },
     {
       "title": "HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory",
+      "roles": ["project_lead", "corresponding_author"],
       "authors": "Xiaolin Zhou, Liu Liu, Tingyang Xiao, Wei Feng, Fa Fu, Xinrui Meng, Xinjie Wang, Jialiang Han, Boyang Yu, Yun Du, Wei Sui, Zhizhong Su",
       "venue": "Technical Report",
       "year": 2026,
@@ -164,7 +352,7 @@
     {
       "title": "SimWeaver: Zero-Shot RGB Sim-to-Real for Deformable Manipulation",
       "authors": "Wenkang Hu, Haoran Wang, Yitong Li, Liu Liu, Mengao Zhao, Lai Jiang, Xincheng Tang, Junhang Wei, Zhengjie Shu, Zhendong Wang, Zhizhong Su, Huamin Wang, Ruigang Yang",
-      "venue": "arXiv",
+      "venue": "NeurIPS (under review)",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2606.15338",
       "code_link": "https://github.com/simWeaver/SimWeaver",
@@ -178,6 +366,7 @@
     },
     {
       "title": "3D-Fixer: Coarse-to-Fine In-place Completion for 3D Scenes from a Single Image",
+      "roles": ["project_lead"],
       "authors": "Zexin Yin, Liu Liu, Xinjie Wang, Wei Sui, Zhizhong Su, Jian Yang, Jin Xie",
       "venue": "CVPR",
       "year": 2026,
@@ -189,6 +378,21 @@
         "Single Image"
       ],
       "thumbnail": "/projects/3dfixer-teaser.png"
+    },
+    {
+      "title": "ManiSplat: Manipulation Trajectory Synthesis from Monocular Video via Decoupled 3D Gaussian Splatting",
+      "roles": ["project_lead"],
+      "authors": "Wenhao Hu, Haonan Zhou, Liu Liu, Yun Du, Xinjie Wang, Ziang Li, Zhizhong Su, Gaoang Wang",
+      "venue": "IJCAI",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2606.10645",
+      "code_link": "",
+      "project_page": "",
+      "tags": [
+        "3D Gaussian Splatting",
+        "Digital Twin",
+        "Manipulation"
+      ]
     },
     {
       "title": "Spa3R: Predictive Spatial Field Modeling for 3D Visual Reasoning",
@@ -207,6 +411,7 @@
     },
     {
       "title": "IRIS-SLAM: Unified Geo-Instance Representations for Robust Semantic Localization and Mapping",
+      "roles": ["project_lead"],
       "authors": "Tingyang Xiao, Liu Liu, Wei Feng, Zhengyu Zou, Xiaolin Zhou, Wei Sui, Hao Li, Dingwen Zhang, Zhizhong Su",
       "venue": "arXiv",
       "year": 2026,
@@ -251,6 +456,7 @@
     },
     {
       "title": "FSR-VLN: Fast and Slow Reasoning for Vision-Language Navigation with Hierarchical Multi-modal Scene Graph",
+      "roles": ["project_lead"],
       "authors": "Xiaolin Zhou, Tingyang Xiao, Liu Liu, Yucheng Wang, Maiyue Chen, Xinrui Meng, Xinjie Wang, Wei Sui, Zhizhong Su",
       "venue": "arXiv",
       "year": 2025,
@@ -293,6 +499,7 @@
     },
     {
       "title": "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-view Images",
+      "roles": ["project_lead"],
       "authors": "Xiangyu Sun, Haoyi Jiang, Liu Liu, Seungtae Nam, Gyeongjin Kang, Xinjie Wang, Wei Sui, Zhizhong Su, Wenyu Liu, Xinggang Wang, Eunbyung Park",
       "venue": "CVPR",
       "year": 2026,
@@ -308,6 +515,7 @@
     },
     {
       "title": "EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence",
+      "roles": ["project_lead"],
       "authors": "Xinjie Wang, Liu Liu, Yu Cao, Ruiqi Wu, Wenkang Qin, Dehui Wang, Wei Sui, Zhizhong Su",
       "venue": "Technical Report",
       "year": 2025,

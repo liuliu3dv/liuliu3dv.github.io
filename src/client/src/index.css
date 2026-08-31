@@ -45,7 +45,7 @@
 :root {
   /* Classic Academic Style Palette */
   /* Primary: Standard Link Blue (similar to Hao Su's links) */
-  --primary: oklch(0.45 0.15 260); 
+  --primary: oklch(0.43 0.065 242);
   --primary-foreground: oklch(0.98 0 0);
   
   /* Sidebar: Not used in this layout, but kept for compatibility */
@@ -63,7 +63,7 @@
   --radius: 0.25rem; 
   
   /* Background: Off-White / Paper-like */
-  --background: oklch(0.99 0 0);
+  --background: oklch(0.977 0.008 82);
   --foreground: oklch(0.20 0 0); /* Dark Gray text, not pitch black */
   
   /* Card: White */
@@ -152,11 +152,16 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),

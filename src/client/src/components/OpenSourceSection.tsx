@@ -1,19 +1,24 @@
 import { ExternalLink, Github, Globe } from "lucide-react";
-import { OpenSourceLink } from "../types";
+import { Language, OpenSourceLink } from "../types";
 import { Badge } from "./ui/badge";
 
 interface OpenSourceSectionProps {
   items: OpenSourceLink[];
+  language: Language;
 }
 
-export function OpenSourceSection({ items }: OpenSourceSectionProps) {
+export function OpenSourceSection({ items, language }: OpenSourceSectionProps) {
   if (!items || items.length === 0) return null;
 
   return (
     <section className="space-y-6">
-      <h2 className="text-2xl font-bold border-b pb-2">Open source &amp; lab</h2>
+      <h2 className="text-2xl font-bold border-b pb-2">
+        {language === "zh" ? "开源工作及技术报告" : "Open-source work & technical reports"}
+      </h2>
       <p className="text-sm text-muted-foreground leading-relaxed">
-        Selected Horizon Robotics Robot Lab hubs and project pages I contribute to alongside collaborators.
+        {language === "zh"
+          ? "与团队共同建设的地平线机器人 Robot Lab 开源项目与技术主页。"
+          : "Selected Horizon Robotics Robot Lab projects and open-source systems built with collaborators."}
       </p>
       <div className="grid gap-5 md:grid-cols-2">
         {items.map((item, idx) => (
@@ -51,7 +56,7 @@ export function OpenSourceSection({ items }: OpenSourceSectionProps) {
                 </div>
                 {item.description && (
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
+                    {language === "zh" ? item.description_zh || item.description : item.description}
                   </p>
                 )}
               </div>
@@ -79,7 +84,9 @@ export function OpenSourceSection({ items }: OpenSourceSectionProps) {
                         className="inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-primary"
                       >
                         <Icon className="h-3.5 w-3.5" />
-                        {link.label}
+                        {language === "zh"
+                          ? ({ Project: "项目主页", Paper: "论文", Code: "代码" } as Record<string, string>)[link.label] || link.label
+                          : link.label}
                       </a>
                     );
                   })}

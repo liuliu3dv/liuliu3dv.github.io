@@ -1,38 +1,49 @@
-import { Github, GraduationCap, Mail, MapPin } from "lucide-react";
-import { Profile } from "../types";
+import { FileText, Github, GraduationCap, Mail, MapPin } from "lucide-react";
+import { Language, Profile } from "../types";
 import { Button } from "./ui/button";
 
 interface ProfileCardProps {
   profile: Profile;
+  language: Language;
 }
 
-export function ProfileCard({ profile }: ProfileCardProps) {
+export function ProfileCard({ profile, language }: ProfileCardProps) {
+  const isZh = language === "zh";
+  const name = isZh ? profile.name_zh || profile.name : profile.name;
+  const title = isZh ? profile.title_zh || profile.title : profile.title;
+  const affiliation = isZh ? profile.affiliation_zh || profile.affiliation : profile.affiliation;
+  const bio = isZh ? profile.bio_zh || profile.bio : profile.bio;
+  const location = isZh ? profile.location_zh || profile.location : profile.location;
+  const initials = isZh && profile.name_zh
+    ? profile.name_zh.slice(0, 1)
+    : profile.name.split(" ").map((part) => part[0]).join("");
+
   return (
     <div className="space-y-6">
-      <div className="w-32 h-32 bg-muted rounded-sm flex items-center justify-center text-4xl text-muted-foreground font-light select-none">
-        {profile.name.split(" ").map((n) => n[0]).join("")}
+      <div className="flex h-28 w-28 select-none items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-4xl font-light text-primary ring-1 ring-primary/15">
+        {profile.avatar ? <img src={profile.avatar} alt={name} className="h-full w-full object-cover" /> : initials}
       </div>
 
       <div className="space-y-4">
         <div>
-          <h1 className="text-4xl font-bold tracking-tight">{profile.name}</h1>
+          <h1 className="font-serif text-4xl font-semibold tracking-tight">{name}</h1>
           <p className="text-lg text-muted-foreground mt-1">
-            {profile.title} @ <span className="text-primary">{profile.affiliation}</span>
+            {title} @ <span className="text-primary">{affiliation}</span>
           </p>
         </div>
 
         <p className="text-muted-foreground leading-relaxed max-w-2xl">
-          {profile.bio}
+          {bio}
         </p>
 
-        <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+        <div className="space-y-2 text-sm text-muted-foreground">
           <div className="flex items-center gap-1.5">
             <Mail className="w-4 h-4" />
-            <span>nemo.liu@horizon.auto</span>
+            <a className="hover:text-primary" href={`mailto:${profile.email}`}>{profile.email}</a>
           </div>
           <div className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
-            <span>Shanghai, China</span>
+            <span>{location}</span>
           </div>
         </div>
 
@@ -47,7 +58,15 @@ export function ProfileCard({ profile }: ProfileCardProps) {
             <Button variant="outline" size="sm" asChild>
               <a href={profile.github_personal} target="_blank" rel="noreferrer">
                 <Github className="w-4 h-4 mr-2" />
-                Personal GitHub
+                GitHub
+              </a>
+            </Button>
+          )}
+          {profile.resume_url && (
+            <Button variant="outline" size="sm" asChild>
+              <a href={profile.resume_url} target="_blank" rel="noreferrer">
+                <FileText className="mr-2 h-4 w-4" />
+                {isZh ? "简历" : "Resume"}
               </a>
             </Button>
           )}

@@ -20,15 +20,15 @@
     "citations": 224,
     "h_index": 8,
     "i10_index": 8,
-    "bio": "I work at Horizon Robotics as an Embodied AI Research Scientist in Horizon Lab, leading research on unified world action models, 3D generation and interactive environments, and 3D reconstruction and understanding. My experience spans foundational 3D perception, scalable data systems, and embodied AI, with an emphasis on turning research into deployed systems and open-source ecosystems.",
-    "bio_zh": "现任地平线机器人 Horizon Lab 具身智能研究员、具身智能与世界模型方向负责人，主导统一世界动作模型、3D生成及可交互环境、3D重建及理解方向的研究。具备从底层3D感知、规模化数据系统到具身智能算法的完整研发经历，推动研究成果走向系统落地与开放生态。关注具身智能方向的技术和合作交流。"
+    "bio": "I work at Horizon Robotics as an Embodied AI Research Scientist in Horizon Lab, leading research on unified world action models, 3D generation and interactive environments, and 3D reconstruction and understanding. My experience spans foundational 3D perception, scalable data systems, and embodied AI, with an emphasis on turning research into deployed systems and open-source ecosystems. Our team is continually hiring for World Model internships and full-time positions, welcoming both experienced candidates and new graduates. Please get in touch to apply or learn more.",
+    "bio_zh": "现任地平线机器人 Horizon Lab 具身智能研究员、具身智能与世界模型方向负责人，主导统一世界动作模型、3D生成及可交互环境、3D重建及理解方向的研究。具备从底层3D感知、规模化数据系统到具身智能算法的完整研发经验，致力于技术落地与开放生态建设，并欢迎相关技术与合作交流。此外，团队长期招聘 World Model 方向实习生，并开放社招、校招岗位，欢迎投递简历或联系交流。"
   },
   "research_focus": [
     {
       "title": "Unified World Action Models",
       "title_zh": "统一世界动作模型",
-      "description": "Building a scalable multimodal data pyramid and automated annotation across internet, ego, and robot data, while advancing multiple technical tracks in parallel.",
-      "description_zh": "打通多模态数据金字塔的规模化拓展与自动化标注，覆盖互联网数据、Ego数据与Robot数据，推动多条技术方案主线并行推进。",
+      "description": "Our goal is to build a unified multimodal embodied foundation model (Language-World-Action Model). To enable large-scale pretraining, we scale the multimodal data pyramid and automate annotation across internet, ego, and robot data, while advancing multiple technical approaches in parallel.",
+      "description_zh": "目标是构建统一多模态具身基础模型（Language-World-Action Model），面向规模化预训练打通多模态数据金字塔的规模化拓展与自动化标注，覆盖互联网数据、Ego数据与Robot数据，推动多条技术方案主线并行推进。",
       "projects": ["DreamWAM", "Faster-WAM", "RoboTransfer"]
     },
     {

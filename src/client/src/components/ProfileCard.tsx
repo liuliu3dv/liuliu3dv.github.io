@@ -1,4 +1,4 @@
-import { FileText, Github, GraduationCap, Mail, MapPin } from "lucide-react";
+import { Github, GraduationCap, Mail, MapPin } from "lucide-react";
 import { Language, Profile } from "../types";
 import { Button } from "./ui/button";
 
@@ -10,7 +10,10 @@ interface ProfileCardProps {
 export function ProfileCard({ profile, language }: ProfileCardProps) {
   const isZh = language === "zh";
   const name = isZh ? profile.name_zh || profile.name : profile.name;
-  const bio = isZh ? profile.bio_zh || profile.bio : profile.bio;
+  const rawBio = isZh ? profile.bio_zh || profile.bio : profile.bio;
+  const bio = isZh
+    ? rawBio.replace("欢迎投递简历或联系交流。", "欢迎联系交流。")
+    : rawBio.replace(" Please get in touch to apply or learn more.", "");
   const location = isZh ? profile.location_zh || profile.location : profile.location;
   const initials = isZh && profile.name_zh
     ? profile.name_zh.slice(0, 1)
@@ -58,15 +61,7 @@ export function ProfileCard({ profile, language }: ProfileCardProps) {
               </a>
             </Button>
           )}
-          {profile.resume_url && (
-            <Button variant="outline" size="sm" asChild>
-              <a href={profile.resume_url} target="_blank" rel="noreferrer">
-                <FileText className="mr-2 h-4 w-4" />
-                {isZh ? "简历" : "Resume"}
-              </a>
-            </Button>
-          )}
-          </div>
+        </div>
       </div>
     </div>
   );

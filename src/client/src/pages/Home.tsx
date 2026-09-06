@@ -111,7 +111,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p>© {new Date().getFullYear()} {zh ? data.profile.name_zh : data.profile.name}</p>
-            <p className="mt-1 text-xs">{zh ? "欢迎具身智能方向的技术与合作交流。" : "Open to research and collaboration in embodied AI."}</p>
+            <p className="mt-1 text-xs">{zh ? "欢迎具身智能方向的技术与合作交流。" : "Research and collaboration in embodied AI."}</p>
           </div>
           <VisitorCounter language={language} />
         </div>

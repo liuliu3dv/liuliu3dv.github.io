@@ -15,7 +15,6 @@ export interface Profile {
   email?: string;
   location?: string;
   location_zh?: string;
-  resume_url?: string;
   citations?: number;
   h_index: number;
   i10_index: number;

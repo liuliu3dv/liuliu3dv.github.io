@@ -3,6 +3,10 @@ import { Language, Profile } from "../types";
 
 export function HeroSection({ profile, language }: { profile: Profile; language: Language }) {
   const zh = language === "zh";
+  const rawBio = zh ? profile.bio_zh || profile.bio : profile.bio;
+  const bio = zh
+    ? rawBio.replace("欢迎投递简历或联系交流。", "欢迎联系交流。")
+    : rawBio.replace(" Please get in touch to apply or learn more.", "");
 
   return (
     <section className="py-12 md:py-16">
@@ -22,7 +26,7 @@ export function HeroSection({ profile, language }: { profile: Profile; language:
         </div>
         <p className="mt-5 text-sm text-muted-foreground">{zh ? profile.location_zh : profile.location}</p>
         <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
-          {zh ? profile.bio_zh : profile.bio}
+          {bio}
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a className="inline-flex items-center gap-2 rounded-full border bg-card px-4 py-2.5 text-sm font-medium transition-colors hover:border-primary hover:text-primary" href={profile.google_scholar} target="_blank" rel="noreferrer">

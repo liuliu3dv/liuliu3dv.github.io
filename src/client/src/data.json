@@ -29,7 +29,7 @@
       "title_zh": "统一世界动作模型",
       "description": "Our goal is to build a unified multimodal embodied foundation model (Language-World-Action Model). To enable large-scale pretraining, we scale the multimodal data pyramid and automate annotation across internet, ego, and robot data, while advancing multiple technical approaches in parallel.",
       "description_zh": "目标是构建统一多模态具身基础模型（Language-World-Action Model），面向规模化预训练打通多模态数据金字塔的规模化拓展与自动化标注，覆盖互联网数据、Ego数据与Robot数据，推动多条技术方案主线并行推进。",
-      "projects": ["DreamWAM", "Faster-WAM", "RoboTransfer"]
+      "projects": ["CogWAM", "ReWAM", "Ego4WAM", "DreamWAM", "Faster-WAM", "RoboTransfer"]
     },
     {
       "title": "3D Generation & Interactive Environments",
@@ -58,12 +58,12 @@
       "summary": "Responsible for technical roadmaps and system delivery across unified world action models, 3D generation and interactive environments, and 3D reconstruction and understanding.",
       "summary_zh": "负责统一世界动作模型、3D生成及可交互环境、3D重建及理解三条方向的技术路线与系统落地。",
       "highlights": [
-        "Unified World Action Models: scale the multimodal data pyramid and automate annotation across internet, ego, and robot data, advancing multiple technical approaches in parallel.",
+        "Unified World Action Models: serve as Project Lead for CogWAM, ReWAM, and Ego4WAM, advancing semantic cognition, control-oriented representations, and egocentric human-data scaling; scale the multimodal data pyramid and automate annotation across internet, ego, and robot data.",
         "3D Generation & Interactive Environments: lead EmbodiedGen / V2 and serve as Project Lead for 3D-Fixer and ManiSplat, connecting simulation-ready scene generation with completion, digital twins, and manipulation trajectories.",
         "3D Reconstruction & Understanding: drive HoloAgent-0 and its persistent 3D spatial memory as a corresponding author; lead IGGT4D's streaming 4D understanding and 147K-sequence data system, and Uni3R's unified reconstruction and semantic understanding."
       ],
       "highlights_zh": [
-        "Unified World Action Model：打通多模态数据金字塔的规模化拓展与自动化标注（互联网数据、Ego数据、Robot数据），推动多条技术方案主线并行推进。",
+        "Unified World Action Model：作为 Project Lead 主导 CogWAM、ReWAM 与 Ego4WAM，推进语义认知、面向控制的表征与第一视角人类数据规模化；打通多模态数据金字塔的规模化拓展与自动化标注（互联网数据、Ego数据、Robot数据）。",
         "3D生成及可交互环境：主导 EmbodiedGen / V2；作为 Project Lead 推动 3D-Fixer 原位场景补全与 ManiSplat 可控数字孪生及操作轨迹合成。",
         "3D重建及理解：推动 HoloAgent-0 统一Agent框架与持久化3D空间记忆落地并担任通讯作者；作为 Project Lead 负责 IGGT4D 的流式4D理解与14.7万序列数据体系，以及 Uni3R 的统一3D重建与语义理解。"
       ]
@@ -188,6 +188,11 @@
   ],
   "news": [
     {
+      "date": "2026.09",
+      "content": "CogWAM, ReWAM, and Ego4WAM released. I serve as Project Lead on all three, advancing semantic cognition, control-oriented representations, and egocentric human-data scaling for world action models.",
+      "content_zh": "CogWAM、ReWAM 与 Ego4WAM 发布，我担任三项工作的项目负责人，分别推进世界动作模型的语义认知、面向控制的表征与第一视角人类数据规模化。"
+    },
+    {
       "date": "2026.08",
       "content": "DreamWAM and Faster-WAM released, advancing robust and efficient world action models.",
       "content_zh": "DreamWAM 与 Faster-WAM 发布，推进更鲁棒、更高效的世界动作模型。"
@@ -234,6 +239,42 @@
     }
   ],
   "papers": [
+    {
+      "title": "Ego4WAM: What Matters When Scaling Egocentric Human Data for Robot Learning?",
+      "roles": ["project_lead"],
+      "authors": "Zhihao Sun, Liu Liu, Xinjiang Wang, Haoyi Jiang, Wei Feng, Huiqiang Zhang, Xiaosong Jia, Zhizhong Su, Zuxuan Wu",
+      "venue": "arXiv",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2609.40341",
+      "code_link": "https://github.com/HorizonRobotics/Ego4WAM",
+      "project_page": "https://sunzhihao18.github.io/Ego4WAM/",
+      "tags": ["World Action Model", "Egocentric Data", "Robot Learning"],
+      "thumbnail": "/projects/ego4wam-data-pyramid.png"
+    },
+    {
+      "title": "Rethinking Representations for World-Action Modeling",
+      "roles": ["project_lead"],
+      "authors": "Haoyi Jiang, Liu Liu, Xinjiang Wang, Zhihao Sun, Zequn Chen, Sen Wang, Xinjie Wang, Xia Chen, Jingfeng Yao, Weiheng Zhao, Shanglin Yuan, Zhizhong Su, Wei Sui, Wenyu Liu, Xinggang Wang",
+      "venue": "arXiv",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2609.38163",
+      "code_link": "https://github.com/hustvl/ReWAM",
+      "project_page": "",
+      "tags": ["ReWAM", "World Action Model", "Representation Learning", "Code coming soon"],
+      "thumbnail": "/projects/rewam-overview.png"
+    },
+    {
+      "title": "CogWAM: Aligning Semantic Cognition with World Action Modeling via Event-Driven Interfaces",
+      "roles": ["project_lead"],
+      "authors": "Sen Wang, Liu Liu, Xinjiang Wang, Zequn Chen, Haoyi Jiang, Taojun Ding, Tingyang Xiao, Zhizhong Su, Jie Wang, Sanping Zhou",
+      "venue": "arXiv",
+      "year": 2026,
+      "paper_link": "https://arxiv.org/abs/2609.37721",
+      "code_link": "https://github.com/HorizonRobotics/CogWAM",
+      "project_page": "https://horizonrobotics.github.io/CogWAM/",
+      "tags": ["World Action Model", "Semantic Cognition", "Long-Horizon Manipulation"],
+      "thumbnail": "/projects/cogwam-overview.png"
+    },
     {
       "title": "InstructMove: A Text-Indispensable Benchmark for Instruction-Following Manipulation",
       "authors": "Mengao Zhao, Ziang Li, Chaodong Huang, Mengchen Ma, Haoyi Jiang, Yiwei Jin, Xinjie Wang, Yun Du, Xuewu Lin, Taojun Ding, Hongyu Xie, Jackson Jiang, Chunlei Yu, Kaihua Zhang, Lichao Huang, Liu Liu, Tianwei Lin, Zhizhong Su",

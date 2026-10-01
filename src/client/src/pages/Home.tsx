@@ -55,7 +55,7 @@ export default function Home() {
     { page: "publications", href: "#/publications", label: zh ? "发表物" : "Publications" },
     { page: "about", href: "#/about", label: zh ? "个人介绍" : "About" },
   ];
-  const featuredNames = ["IGGT4D:", "EmbodiedGen V2:", "HoloAgent-0:", "Uni3R:", "RoboTransfer:"];
+  const featuredNames = ["CogWAM:", "Rethinking Representations for World-Action Modeling", "Ego4WAM:", "IGGT4D:", "EmbodiedGen V2:", "HoloAgent-0:", "Uni3R:", "RoboTransfer:"];
   const featuredPapers = data.papers.filter((paper) => featuredNames.some((name) => paper.title.startsWith(name)));
 
   return (

@@ -19,7 +19,7 @@ export function NewsSection({ news, language }: NewsSectionProps) {
             <span className="font-mono text-muted-foreground whitespace-nowrap">
               {item.date}
             </span>
-            <span>{language === "zh" ? item.content_zh || item.content : item.content}</span>
+            <span>{language === "zh" ? item.content_zh || item.content : item.content}{item.link && <a href={item.link} className="ml-2 text-primary hover:underline">[{language === "zh" ? "幻灯片" : "Slides"}]</a>}</span>
           </div>
         ))}
       </div>

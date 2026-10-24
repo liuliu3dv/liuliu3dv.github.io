@@ -2,9 +2,9 @@
   "profile": {
     "name": "Liu Liu",
     "name_zh": "刘浏",
-    "avatar": "/profile-dscf1311.jpg",
-    "title": "Embodied AI & World Models Lead",
-    "title_zh": "具身智能・世界模型方向负责人",
+    "avatar": "/profile-dscf1311-web.jpg",
+    "title": "Embodied World Models Lead",
+    "title_zh": "具身世界模型负责人",
     "affiliation": "Horizon Robotics",
     "affiliation_zh": "地平线机器人",
     "research_areas": [
@@ -20,29 +20,31 @@
     "citations": 224,
     "h_index": 8,
     "i10_index": 8,
-    "bio": "I work at Horizon Robotics as an Embodied AI Research Scientist in Horizon Lab, leading research on unified world action models, 3D generation and interactive environments, and 3D reconstruction and understanding. I welcome research collaborations and technical exchange with colleagues in academia and industry, especially around embodied AI, real-world systems, and open-source ecosystems. Our team is continually hiring for World Model internships and full-time positions, welcoming both experienced candidates and new graduates. Please get in touch to apply or learn more.",
-    "bio_zh": "现任地平线机器人 Horizon Lab 具身智能研究员、具身智能与世界模型方向负责人，主导统一世界动作模型、3D生成及可交互环境、3D重建及理解方向的研究。关注具身智能的前沿研究、系统落地与开放生态建设，欢迎与学术界和产业界开展研究合作与技术交流。此外，团队长期招聘 World Model 方向实习生，并开放社招、校招岗位，欢迎投递简历或联系交流。"
+    "bio_short": "I am the Embodied World Models Lead at Horizon Robotics’ Horizon Labs, working on world action models, 3D generation, and scene understanding. I welcome research collaborations and applicants for World Model internships and full-time roles.",
+    "bio_short_zh": "现任地平线机器人 Horizon Labs 具身世界模型负责人，研究世界动作模型、三维生成与场景理解。欢迎研究合作与技术交流，团队开放 World Model 方向实习及全职岗位。",
+    "bio": "I am the Embodied World Models Lead at Horizon Robotics’ Horizon Labs. I work on world action models, 3D generation, and scene understanding, building on earlier work in 3D perception, 4D labeling, and closed-loop simulation. I welcome research collaborations and technical exchange, and our team has internship and full-time openings in world models.",
+    "bio_zh": "现任地平线机器人 Horizon Labs 具身世界模型负责人，研究世界动作模型、3D生成与场景理解。此前从事3D感知、4D标注与闭环仿真系统研发。欢迎研究合作与技术交流，团队开放世界模型方向实习及全职岗位。"
   },
   "research_focus": [
     {
       "title": "Unified World Action Models",
       "title_zh": "统一世界动作模型",
-      "description": "Our goal is to build a unified multimodal embodied foundation model (Language-World-Action Model). To enable large-scale pretraining, we scale the multimodal data pyramid and automate annotation across internet, ego, and robot data, while advancing multiple technical approaches in parallel.",
-      "description_zh": "目标是构建统一多模态具身基础模型（Language-World-Action Model），面向规模化预训练打通多模态数据金字塔的规模化拓展与自动化标注，覆盖互联网数据、Ego数据与Robot数据，推动多条技术方案主线并行推进。",
+      "description": "We aim to build unified language-world-action foundation models. Our work scales internet, egocentric, and robot data through automated annotation, while advancing control-oriented representations and instruction following.",
+      "description_zh": "目标是构建统一的语言—世界—动作具身基础模型。通过自动标注扩展互联网、第一视角与机器人数据，研究面向控制的表征与指令遵从。",
       "projects": ["CogWAM", "ReWAM", "Ego4WAM", "DreamWAM", "Faster-WAM", "RoboTransfer"]
     },
     {
       "title": "3D Generation & Interactive Environments",
       "title_zh": "3D生成及可交互环境",
-      "description": "Leading simulation-ready 3D world generation, in-place scene completion, and controllable digital twins for embodied training and evaluation.",
-      "description_zh": "主导可交互3D世界生成、原位场景补全与可控数字孪生，为具身策略训练、评测和轨迹合成提供仿真就绪环境。",
+      "description": "We develop interactive 3D worlds for robot training and evaluation. Our work combines simulation-ready generation, in-place scene completion, and controllable digital twins for data and trajectory synthesis.",
+      "description_zh": "面向机器人训练与评测，构建可交互的3D世界。结合仿真就绪的场景生成、原位补全与可控数字孪生，支持数据和操作轨迹合成。",
       "projects": ["EmbodiedGen / V2", "3D-Fixer", "ManiSplat"]
     },
     {
       "title": "3D Reconstruction & Understanding",
       "title_zh": "3D重建及理解",
-      "description": "Developing feed-forward 3D foundation models, streaming geometry-instance understanding, and persistent 3D spatial memory for embodied agents.",
-      "description_zh": "推进Feed-Forward 3D基础模型、流式几何-实例理解与持久化3D空间记忆，服务具身Agent的感知与执行闭环。",
+      "description": "We develop feed-forward 3D foundation models for scene reconstruction and understanding. We study streaming geometry, instance understanding, and persistent spatial memory to support perception and closed-loop execution.",
+      "description_zh": "面向具身Agent，研究前馈式3D基础模型，实现统一的场景重建与理解。结合流式几何、实例理解与持久化空间记忆，支持感知和执行闭环。",
       "projects": ["HoloAgent-0", "IGGT4D", "Uni3R"]
     }
   ],
@@ -50,34 +52,34 @@
     {
       "company": "Horizon Robotics",
       "company_zh": "地平线机器人",
-      "role": "Embodied AI & World Models Lead",
-      "role_zh": "具身智能・世界模型方向负责人",
+      "role": "Embodied World Models Lead",
+      "role_zh": "具身世界模型负责人",
       "location": "Shanghai / Beijing",
       "location_zh": "上海 / 北京",
       "period": "2024–Present",
-      "summary": "Responsible for technical roadmaps and system delivery across unified world action models, 3D generation and interactive environments, and 3D reconstruction and understanding.",
-      "summary_zh": "负责统一世界动作模型、3D生成及可交互环境、3D重建及理解三条方向的技术路线与系统落地。",
+      "summary": "Lead embodied world model research, coordinating technical planning and the development of research prototypes into working systems.",
+      "summary_zh": "负责具身世界模型方向的技术规划与研究协同，推进原型向可用系统转化。",
       "highlights": [
-        "Unified World Action Models: serve as Project Lead for CogWAM, ReWAM, and Ego4WAM, advancing semantic cognition, control-oriented representations, and egocentric human-data scaling; scale the multimodal data pyramid and automate annotation across internet, ego, and robot data.",
-        "3D Generation & Interactive Environments: lead EmbodiedGen / V2 and serve as Project Lead for 3D-Fixer and ManiSplat, connecting simulation-ready scene generation with completion, digital twins, and manipulation trajectories.",
-        "3D Reconstruction & Understanding: drive HoloAgent-0 and its persistent 3D spatial memory as a corresponding author; lead IGGT4D's streaming 4D understanding and 147K-sequence data system, and Uni3R's unified reconstruction and semantic understanding."
+        "Data and model development: advance multimodal data scaling and automated annotation, alongside semantic execution interfaces and control representations (CogWAM, ReWAM, Ego4WAM).",
+        "Simulation infrastructure: advance world generation, scene completion, and controllable digital twins for robot training and manipulation trajectory synthesis (EmbodiedGen / V2, 3D-Fixer, ManiSplat).",
+        "Spatial perception and memory: coordinate research on streaming 4D understanding and its 147K-sequence data system (IGGT4D), unified reconstruction and semantics (Uni3R), and persistent 3D memory (HoloAgent-0)."
       ],
       "highlights_zh": [
-        "Unified World Action Model：作为 Project Lead 主导 CogWAM、ReWAM 与 Ego4WAM，推进语义认知、面向控制的表征与第一视角人类数据规模化；打通多模态数据金字塔的规模化拓展与自动化标注（互联网数据、Ego数据、Robot数据）。",
-        "3D生成及可交互环境：主导 EmbodiedGen / V2；作为 Project Lead 推动 3D-Fixer 原位场景补全与 ManiSplat 可控数字孪生及操作轨迹合成。",
-        "3D重建及理解：推动 HoloAgent-0 统一Agent框架与持久化3D空间记忆落地并担任通讯作者；作为 Project Lead 负责 IGGT4D 的流式4D理解与14.7万序列数据体系，以及 Uni3R 的统一3D重建与语义理解。"
+        "数据与模型研发：推进多模态数据扩展和自动标注，以及语义执行接口与控制表征研究（CogWAM、ReWAM、Ego4WAM）。",
+        "仿真基础设施：推进世界生成、场景补全与可控数字孪生研发，支持机器人训练和操作轨迹合成（EmbodiedGen / V2、3D-Fixer、ManiSplat）。",
+        "空间感知与记忆：协同推进流式4D理解及14.7万序列数据体系（IGGT4D）、统一重建与语义理解（Uni3R）、持久化3D空间记忆（HoloAgent-0）。"
       ]
     },
     {
       "company": "Horizon Robotics",
       "company_zh": "地平线机器人",
-      "role": "Autonomous Driving 4D Label & Closed-loop Simulation Technical Lead",
-      "role_zh": "自动驾驶 4D Label&闭环仿真技术负责人",
+      "role": "Autonomous Driving 4D Labeling & Closed-loop Simulation Technical Lead",
+      "role_zh": "自动驾驶4D标注与闭环仿真技术负责人",
       "location": "Shanghai / Beijing",
       "location_zh": "上海 / 北京",
       "period": "2022–2024",
-      "summary": "Led a production-grade vision-only 4D labeling system and Horizon's first 3D Gaussian Splatting closed-loop simulation and data synthesis pipeline.",
-      "summary_zh": "带队交付国内首套纯视觉4D Label标注系统，并主导地平线首个基于3D Gaussian Splatting的闭环仿真与数据合成系统。"
+      "summary": "Led delivery of a production-grade vision-only 4D labeling system and Horizon's first 3D Gaussian Splatting pipeline for closed-loop simulation and data synthesis.",
+      "summary_zh": "带队交付工程化纯视觉4D标注系统，并主导地平线首个基于3D Gaussian Splatting的闭环仿真与数据合成系统。"
     },
     {
       "company": "Orbbec",
@@ -115,12 +117,12 @@
     {
       "label": "Patents",
       "label_zh": "专利",
-      "content": "More than 10 domestic and international 3D vision patents, covering depth estimation, stereo matching, LiDAR-camera calibration, sensor synchronization, single-photon LiDAR ranging, and point cloud processing.",
-      "content_zh": "国内外3D视觉相关专利10余项，覆盖深度估计、立体匹配、LiDAR-Camera标定、传感器同步、单光子LiDAR测距与点云处理等。"
+      "content": "Over 10 granted 3D vision patents in China and abroad, covering depth estimation, stereo matching, LiDAR-camera calibration, sensor synchronization, single-photon LiDAR ranging, and point cloud processing.",
+      "content_zh": "国内外3D视觉相关授权专利10余项，覆盖深度估计、立体匹配、LiDAR-Camera标定、传感器同步、单光子LiDAR测距与点云处理等。"
     },
     {
       "label": "Book contribution",
-      "label_zh": "专著",
+      "label_zh": "参编著作",
       "content": "Contributed to 《智能驾驶与多维重建》 (China Machine Press, 2025), covering 3D reconstruction, 4D labeling, mapping and localization, simulation, and visualization through industry practice.",
       "content_zh": "参与编撰《智能驾驶与多维重建》（机械工业出版社，2025），结合产业实践介绍三维重建、4D标注、建图定位、仿真与可视化。"
     },
@@ -135,8 +137,8 @@
     {
       "title": "HoloAgent-0",
       "url": "https://horizonrobotics.github.io/robot_lab/holoagent/",
-      "description": "A unified, agentic system for general-purpose robots, enabling multi-modal perception, mapping and localization, and autonomous mobility and manipulation. v0 release.",
-      "description_zh": "面向通用机器人的统一Agent系统，融合多模态感知、建图定位、自主移动与操作，并通过持久化3D空间记忆构建可反馈的执行闭环。",
+      "description": "An embodied agent with 3D spatial memory for navigation and manipulation.",
+      "description_zh": "融合3D空间记忆、导航与操作的具身Agent。",
       "tags": [
         "Embodied AI",
         "Agent",
@@ -157,14 +159,14 @@
           "url": "https://github.com/HorizonRobotics/HoloAgent"
         }
       ],
-      "image": "/projects/holoagent-navigation_dance.gif"
+      "image": "/projects/holoagent-navigation_dance.mp4"
     },
     {
       "title": "EmbodiedGen V2",
       "url": "https://horizonrobotics.github.io/EmbodiedGen/",
-      "description": "A generative 3D world engine for embodied intelligence — V2 upgrade with enhanced generation quality and expanded capabilities. Project page, paper, and open-source code available.",
-      "description_zh": "面向具身智能的生成式3D世界引擎；V2进一步提升生成质量、物理与尺度一致性，并扩展仿真就绪能力。",
-      "image": "/projects/embodied_gen_v2_overview.jpg",
+      "description": "An agentic 3D world engine for simulation-ready scenes and assets.",
+      "description_zh": "面向仿真场景与资产生成的智能3D世界引擎。",
+      "image": "/projects/embodiedgen-v2-teaser.mp4",
       "tags": [
         "Embodied AI",
         "World Model",
@@ -188,9 +190,20 @@
   ],
   "news": [
     {
+      "date": "2026.10",
+      "content": "IGGT4D accepted to NeurIPS 2026.",
+      "content_zh": "IGGT4D 被 NeurIPS 2026 接收。"
+    },
+    {
+      "date": "2026.10",
+      "content": "Gave a technical talk at HKUST titled \"Advancing World Action Models: From Scalable Experience to Robust and Efficient Robot Control\".",
+      "content_zh": "在香港科技大学作技术分享：《Advancing World Action Models: From Scalable Experience to Robust and Efficient Robot Control》。",
+      "link": "/talks/2026-10-20-hkust/"
+    },
+    {
       "date": "2026.09",
-      "content": "CogWAM, ReWAM, and Ego4WAM released. I serve as Project Lead on all three, advancing semantic cognition, control-oriented representations, and egocentric human-data scaling for world action models.",
-      "content_zh": "CogWAM、ReWAM 与 Ego4WAM 发布，我担任三项工作的项目负责人，分别推进世界动作模型的语义认知、面向控制的表征与第一视角人类数据规模化。"
+      "content": "CogWAM, ReWAM, and Ego4WAM released, advancing semantic cognition, control representations, and egocentric data scaling.",
+      "content_zh": "CogWAM、ReWAM 与 Ego4WAM 发布，推进语义认知、控制表征与第一视角数据扩展。"
     },
     {
       "date": "2026.08",
@@ -252,7 +265,7 @@
       "thumbnail": "/projects/ego4wam-data-pyramid.png"
     },
     {
-      "title": "Rethinking Representations for World-Action Modeling",
+      "title": "ReWAM: Rethinking Representations for World-Action Modeling",
       "roles": ["project_lead"],
       "authors": "Haoyi Jiang, Liu Liu, Xinjiang Wang, Zhihao Sun, Zequn Chen, Sen Wang, Xinjie Wang, Xia Chen, Jingfeng Yao, Weiheng Zhao, Shanglin Yuan, Zhizhong Su, Wei Sui, Wenyu Liu, Xinggang Wang",
       "venue": "arXiv",
@@ -281,6 +294,7 @@
       "venue": "arXiv",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2608.22990",
+      "thumbnail": "/projects/instructmove-teaser.webp",
       "code_link": "https://github.com/HorizonRobotics/RoboOrchardSim",
       "project_page": "",
       "tags": ["Robotics", "Instruction Following", "Benchmark"]
@@ -291,6 +305,7 @@
       "venue": "arXiv",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2608.04996",
+      "thumbnail": "/projects/dreamwam-teaser.webp",
       "code_link": "https://github.com/hustvl/DreamWAM",
       "project_page": "",
       "tags": [
@@ -304,6 +319,7 @@
       "venue": "arXiv",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2608.04404",
+      "thumbnail": "/projects/faster-wam-teaser.webp",
       "code_link": "",
       "project_page": "",
       "tags": [
@@ -315,7 +331,7 @@
       "title": "IGGT4D: Streaming 4D Instance-Grounded Geometry Transformer",
       "roles": ["project_lead"],
       "authors": "Zhengyu Zou, Hao Li, Kuixuan Jiao, Liu Liu, Tingyang Xiao, Xiaolin Zhou, Fangzhou Hong, Zhizhong Su, Dingwen Zhang, Ziwei Liu",
-      "venue": "NeurIPS (under review)",
+      "venue": "NeurIPS",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2607.19228",
       "code_link": "https://github.com/HorizonRobotics/IGGT4D",
@@ -341,7 +357,7 @@
         "Generative World Model",
         "V2"
       ],
-      "thumbnail": "/projects/embodied_gen_v2_overview.jpg"
+      "thumbnail": "/projects/embodiedgen-v2-teaser.mp4"
     },
     {
       "title": "GeoFlow-SLAM++: A Robust Multi-Camera Visual-Inertial SLAM System with Relocalization",
@@ -350,6 +366,7 @@
       "venue": "arXiv",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2606.22051",
+      "thumbnail": "/projects/geoflow-slam-plus-teaser.webp",
       "code_link": "",
       "project_page": "",
       "tags": [
@@ -388,7 +405,7 @@
         "Agent",
         "3D Spatial Memory"
       ],
-      "thumbnail": "/projects/holoagent-navigation_dance.gif"
+      "thumbnail": "/projects/holoagent-navigation_dance.mp4"
     },
     {
       "title": "SimWeaver: Zero-Shot RGB Sim-to-Real for Deformable Manipulation",
@@ -427,6 +444,7 @@
       "venue": "IJCAI",
       "year": 2026,
       "paper_link": "https://arxiv.org/abs/2606.10645",
+      "thumbnail": "/projects/manisplat-teaser.webp",
       "code_link": "",
       "project_page": "",
       "tags": [
@@ -508,7 +526,7 @@
         "Vision-Language Navigation",
         "Reasoning"
       ],
-      "thumbnail": "/projects/fsr-vln.gif"
+      "thumbnail": "/projects/fsr-vln.mp4"
     },
     {
       "title": "DreamLifting: A Plug-in Module Lifting MV Diffusion Models for 3D Asset Generation",
@@ -522,7 +540,7 @@
         "Generative AI",
         "3D Assets"
       ],
-      "thumbnail": "/projects/DreamLifting.gif"
+      "thumbnail": "/projects/DreamLifting.mp4"
     },
     {
       "title": "IGFuse: Interactive 3D Gaussian Scene Reconstruction via Multi-Scans Fusion",
@@ -536,7 +554,7 @@
         "3D Reconstruction",
         "Gaussian Splatting"
       ],
-      "thumbnail": "/projects/IGFuse.gif"
+      "thumbnail": "/projects/IGFuse.mp4"
     },
     {
       "title": "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-view Images",
@@ -552,7 +570,7 @@
         "3D Reconstruction",
         "Semantic Understanding"
       ],
-      "thumbnail": "/projects/Uni3R.gif"
+      "thumbnail": "/projects/Uni3R.mp4"
     },
     {
       "title": "EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence",
@@ -567,7 +585,7 @@
         "Embodied AI",
         "Generative World Model"
       ],
-      "thumbnail": "/projects/embodied_gen.gif"
+      "thumbnail": "/projects/embodied_gen.mp4"
     },
     {
       "title": "RoboTransfer: Geometry-Consistent Video Diffusion for Robotic Visual Policy Transfer",
@@ -582,7 +600,7 @@
         "Video Diffusion",
         "Sim-to-Real"
       ],
-      "thumbnail": "/projects/robotransfer.gif"
+      "thumbnail": "/projects/robotransfer.mp4"
     },
     {
       "title": "DIPO: Dual-State Images Controlled Articulated Object Generation Powered by Diverse Data",
@@ -597,7 +615,7 @@
         "3D Objects",
         "Articulated Objects"
       ],
-      "thumbnail": "/projects/dipo.gif"
+      "thumbnail": "/projects/dipo.mp4"
     },
     {
       "title": "GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial Fusion SLAM for Dynamic Legged Robotics",
@@ -611,7 +629,7 @@
         "SLAM",
         "Robotics"
       ],
-      "thumbnail": "/projects/GeomFlow.gif"
+      "thumbnail": "/projects/GeomFlow.mp4"
     },
     {
       "title": "GaussTR: Foundation Model-Aligned Gaussian Transformer for Self-Supervised 3D Spatial Understanding",
@@ -626,7 +644,7 @@
         "Transformer",
         "Gaussian Splatting"
       ],
-      "thumbnail": "/projects/gstr.gif"
+      "thumbnail": "/projects/gstr.mp4"
     },
     {
       "title": "Gaussian Object Carver: Object-Compositional Gaussian Splatting with surfaces completion",
@@ -640,7 +658,7 @@
         "3D Vision",
         "Gaussian Splatting"
       ],
-      "thumbnail": "/projects/goc.gif"
+      "thumbnail": "/projects/goc.mp4"
     },
     {
       "title": "GLS: Geometry-aware 3D Language Gaussian Splatting",
@@ -655,7 +673,7 @@
         "Language",
         "Gaussian Splatting"
       ],
-      "thumbnail": "/projects/gls.gif"
+      "thumbnail": "/projects/gls.mp4"
     }
   ]
 }

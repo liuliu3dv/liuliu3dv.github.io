@@ -15,7 +15,7 @@ export function BackgroundSection({ education, service, language }: { education:
         ))}
       </section>
       <section className="space-y-6">
-        <h2 className="border-b pb-3 text-2xl font-bold">{zh ? "专利・出版・学术服务" : "Patents, publications & service"}</h2>
+        <h2 className="border-b pb-3 text-2xl font-bold">{zh ? "专业活动与其他成果" : "Professional activities"}</h2>
         {service.map((item) => (
           <article key={item.label}>
             <h3 className="font-semibold">{zh ? item.label_zh : item.label}</h3>

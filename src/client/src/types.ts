@@ -20,6 +20,8 @@ export interface Profile {
   i10_index: number;
   bio: string;
   bio_zh?: string;
+  bio_short?: string;
+  bio_short_zh?: string;
 }
 
 export interface OpenSourceLink {
@@ -39,6 +41,7 @@ export interface NewsItem {
   date: string;
   content: string;
   content_zh?: string;
+  link?: string;
 }
 
 export interface ResearchFocusItem {

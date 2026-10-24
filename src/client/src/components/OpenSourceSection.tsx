@@ -1,6 +1,7 @@
 import { ExternalLink, Github, Globe } from "lucide-react";
 import { Language, OpenSourceLink } from "../types";
 import { Badge } from "./ui/badge";
+import { MediaPreview } from "./MediaPreview";
 
 interface OpenSourceSectionProps {
   items: OpenSourceLink[];
@@ -15,11 +16,6 @@ export function OpenSourceSection({ items, language }: OpenSourceSectionProps) {
       <h2 className="text-2xl font-bold border-b pb-2">
         {language === "zh" ? "开源工作及技术报告" : "Open-source work & technical reports"}
       </h2>
-      <p className="text-sm text-muted-foreground leading-relaxed">
-        {language === "zh"
-          ? "与团队共同建设的地平线机器人 Robot Lab 开源项目与技术主页。"
-          : "Selected Horizon Robotics Robot Lab projects and open-source systems built with collaborators."}
-      </p>
       <div className="grid gap-5 md:grid-cols-2">
         {items.map((item, idx) => (
           <article
@@ -28,11 +24,10 @@ export function OpenSourceSection({ items, language }: OpenSourceSectionProps) {
           >
             {item.image ? (
               <a href={item.url || item.links?.[0]?.url} target="_blank" rel="noreferrer">
-                <img
+                <MediaPreview
                   src={item.image}
                   alt={item.title}
                   className="h-44 w-full object-cover object-center"
-                  loading="lazy"
                 />
               </a>
             ) : (

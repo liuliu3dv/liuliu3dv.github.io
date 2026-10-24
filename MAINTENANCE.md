@@ -88,6 +88,12 @@
 
 英文内容使用原字段，中文内容使用带 `_zh` 后缀的字段，例如 `bio` / `bio_zh`、`content` / `content_zh`。论文题目和作者保持原始英文，不做翻译。
 
+首页简介使用 `profile.bio_short` / `bio_short_zh`，个人介绍页继续使用完整的 `bio` / `bio_zh`。当前工作与开源项目的介绍各保留一句，栏目按 Current work、News、Open-source work & technical reports、Technical talks、Selected publications 排列。
+
+动画预览可使用 MP4，配套同名 `-poster.jpg` 封面，例如 `demo.mp4` 与 `demo-poster.jpg`。预览仅在进入视口时播放，系统要求减少动画时显示封面。原始 GIF 与照片保留，网页引用优化副本。
+
+港科大报告归档位于 `src/client/public/talks/2026-10-20-hkust/`，展示日期为 2026.10。只提供在线幻灯片阅读和原图查看，不提供讲稿或 PDF 下载入口。
+
 ### 4. 修改研究方向与工作经历
 
 分别编辑 `research_focus`、`experience`、`education` 和 `service` 数组。每一项均提供英文与中文字段；新增内容时请同步维护两种语言。

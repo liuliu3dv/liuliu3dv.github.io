@@ -3,10 +3,9 @@ import { Language, Profile } from "../types";
 
 export function HeroSection({ profile, language }: { profile: Profile; language: Language }) {
   const zh = language === "zh";
-  const rawBio = zh ? profile.bio_zh || profile.bio : profile.bio;
   const bio = zh
-    ? rawBio.replace("欢迎投递简历或联系交流。", "欢迎联系交流。")
-    : rawBio.replace(" Please get in touch to apply or learn more.", "");
+    ? profile.bio_short_zh || profile.bio_zh || profile.bio
+    : profile.bio_short || profile.bio;
 
   return (
     <section className="py-12 md:py-16">

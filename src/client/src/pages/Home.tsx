@@ -10,6 +10,7 @@ import { ProfileCard } from "@/components/ProfileCard";
 import { PublicationList } from "@/components/PublicationList";
 import { ResearchFocusSection } from "@/components/ResearchFocusSection";
 import { VisitorCounter } from "@/components/VisitorCounter";
+import { TalkSection } from "@/components/TalkSection";
 import siteData from "../data.json";
 import { Language, SiteData } from "../types";
 
@@ -24,6 +25,7 @@ function pageFromHash(): Page {
 export default function Home() {
   const data = siteData as SiteData;
   const [page, setPage] = useState<Page>(pageFromHash);
+  const [hash, setHash] = useState(() => window.location.hash);
   const [language, setLanguage] = useState<Language>(() => {
     const saved = window.localStorage.getItem("site-language");
     if (saved === "en" || saved === "zh") return saved;
@@ -34,14 +36,19 @@ export default function Home() {
   useEffect(() => {
     const navigate = () => {
       setPage(pageFromHash());
+      setHash(window.location.hash);
     };
     window.addEventListener("hashchange", navigate);
     return () => window.removeEventListener("hashchange", navigate);
   }, []);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, [page]);
+    if (page === "home" && hash === "#talks") {
+      document.getElementById("talks")?.scrollIntoView({ behavior: "instant", block: "start" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }, [page, hash]);
 
   useEffect(() => {
     window.localStorage.setItem("site-language", language);
@@ -55,7 +62,7 @@ export default function Home() {
     { page: "publications", href: "#/publications", label: zh ? "发表物" : "Publications" },
     { page: "about", href: "#/about", label: zh ? "个人介绍" : "About" },
   ];
-  const featuredNames = ["CogWAM:", "Rethinking Representations for World-Action Modeling", "Ego4WAM:", "IGGT4D:", "EmbodiedGen V2:", "HoloAgent-0:", "Uni3R:", "RoboTransfer:"];
+  const featuredNames = ["CogWAM:", "ReWAM:", "Ego4WAM:", "IGGT4D:", "EmbodiedGen V2:", "HoloAgent-0:", "Uni3R:", "RoboTransfer:"];
   const featuredPapers = data.papers.filter((paper) => featuredNames.some((name) => paper.title.startsWith(name)));
 
   return (
@@ -82,12 +89,13 @@ export default function Home() {
             <HeroSection profile={data.profile} language={language} />
             <div className="space-y-16 border-t py-14">
               {data.research_focus && <ResearchFocusSection items={data.research_focus} language={language} />}
+              <NewsSection news={data.news.slice(0, 6)} language={language} />
               {data.open_source?.length ? <OpenSourceSection items={data.open_source} language={language} /> : null}
+              <TalkSection language={language} />
               <section>
                 <PublicationList papers={featuredPapers} language={language} title={zh ? "代表性发表物" : "Selected publications"} description={zh ? "围绕世界动作模型与三维视觉的近期代表性工作。" : "A selection of recent work across world models and 3D vision."} />
                 <a href="#/publications" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">{zh ? "查看全部发表物" : "View all publications"} <ArrowRight className="h-4 w-4" /></a>
               </section>
-              <NewsSection news={data.news.slice(0, 6)} language={language} />
             </div>
           </>
         )}

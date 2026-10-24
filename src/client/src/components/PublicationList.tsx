@@ -1,6 +1,7 @@
 import { FileText, Github, Globe } from "lucide-react";
 import { Language, Paper } from "../types";
 import { Badge } from "./ui/badge";
+import { MediaPreview } from "./MediaPreview";
 
 interface PublicationListProps {
   papers: Paper[];
@@ -13,8 +14,8 @@ export function PublicationList({ papers, language, title, description }: Public
   if (!papers || papers.length === 0) return null;
 
   const roleLabels = {
-    project_lead: language === "zh" ? "项目负责人" : "Project Lead",
-    corresponding_author: language === "zh" ? "通讯作者" : "Corresponding Author",
+    project_lead: "Project Lead",
+    corresponding_author: "Corresponding Author",
   };
 
   return (
@@ -29,12 +30,12 @@ export function PublicationList({ papers, language, title, description }: Public
         {papers.map((paper, idx) => (
           <div key={idx} className="flex gap-6 group">
             {paper.thumbnail && (
-              <div className="hidden sm:block w-32 h-24 bg-muted rounded-sm flex-shrink-0 overflow-hidden border">
-                <img
+              <div className="hidden sm:block w-32 h-24 bg-white rounded-sm flex-shrink-0 overflow-hidden border">
+                <MediaPreview
                   src={paper.thumbnail}
                   alt={paper.title}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
+                  className="h-full w-full"
+                  fit="contain"
                 />
               </div>
             )}
@@ -55,14 +56,13 @@ export function PublicationList({ papers, language, title, description }: Public
                   </span>
                 ))}
               </p>
-              {paper.roles?.length ? (
-                <p className="text-xs font-medium leading-relaxed text-primary">
-                  {language === "zh" ? "本人角色：" : "My role: "}
-                  {paper.roles.map((role) => roleLabels[role]).join(" · ")}
-                </p>
-              ) : null}
               <div className="flex flex-wrap items-center gap-2 text-sm">
                 <span className="font-medium italic">{paper.venue} {paper.year}</span>
+                {paper.roles?.map((role) => (
+                  <Badge key={role} variant="outline" className="border-primary/25 bg-primary/5 text-xs font-semibold text-primary">
+                    {roleLabels[role]}
+                  </Badge>
+                ))}
                 {paper.tags && paper.tags.map(tag => (
                   <Badge key={tag} variant="secondary" className="text-xs font-normal">
                     {tag}
